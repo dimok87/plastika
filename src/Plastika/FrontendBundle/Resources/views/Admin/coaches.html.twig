@@ -1,0 +1,22 @@
+{% extends 'PlastikaFrontendBundle:Layout:admin.html.twig' %}
+
+{% block title %}Хореографы{% endblock %}
+
+{% block body %}
+   <div class="container">
+      <h2>Хореографы</h2>
+      <br /><br />
+      <a class="btn btn-primary" href="{{path('coachcreate')}}">Добавить хореографа</a>
+      <br /><br /><br />
+      <div class="list-group">
+      {% for item in coaches %}
+      <a href="{{path('coachedit', {'id' : item.id})}}" class="list-group-item">
+         <span class="badge" onclick="javascript:if (!confirm('Вы уверены?')) { return false; } else { location.href='{{path('coachdelete', {'id' : item.id})}}'; return false; }">x</span>
+         {{item.title}}
+      </a>
+      {% endfor %}
+      </div>
+      
+   </div>
+   
+{% endblock %}

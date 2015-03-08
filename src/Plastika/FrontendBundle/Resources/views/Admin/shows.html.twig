@@ -1,0 +1,21 @@
+{% extends 'PlastikaFrontendBundle:Layout:admin.html.twig' %}
+
+{% block title %}Шоу-программы{% endblock %}
+
+{% block body %}
+   <div class="container">
+      <h2>Шоу программы</h2>
+      <br /><br />
+      <a class="btn btn-primary" href="{{path('showcreate')}}">Добавить шоу-программу</a>
+      <br /><br /><br />
+      <div class="list-group">
+      {% for show in shows %}
+      <a href="{{path('showedit', {'id' : show.id})}}" class="list-group-item">
+         <span class="badge" onclick="javascript:if (!confirm('Вы уверены?')) { return false; } else { location.href='{{path('showdelete', {'id' : show.id})}}'; return false; }">x</span>
+         {{show.title}}
+      </a>
+      {% endfor %}
+      </div>
+      
+   </div>
+{% endblock %}

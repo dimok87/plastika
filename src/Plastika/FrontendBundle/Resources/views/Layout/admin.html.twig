@@ -1,0 +1,99 @@
+{% set items = { 'styles': 'Направления', 'coaches': 'Хореографы', 'timetable': 'Расписание', 'price': 'Цены', 'media': 'Галерея', 'achieves': 'Достижения', 'news': 'Новости', 'shows': 'Шоу-программы' } %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title%}{% endblock %} - Пластика</title>
+    
+    <!-- Bootstrap -->
+    {% stylesheets
+      'bundles/plastikafrontend/css/bootstrap.min.css' filter='cssrewrite'
+      'bundles/plastikafrontend/css/ekko-lightbox.css' filter='cssrewrite'
+      'bundles/plastikafrontend/css/master.css' filter='cssrewrite' %}
+     <link rel="stylesheet" type="text/css" href="{{ asset_url }}" />
+    {% endstylesheets %}
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+         <div id="header">
+            <div id="top-header">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <a href="{{ path('index') }}">
+                          {% image '@PlastikaFrontendBundle/Resources/public/images/logo.png' %}
+                          <img src="{{ asset_url }}" />
+                          {% endimage %}
+                        </a>
+                     </div>
+                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <h1>{{app.user.username}}</h1>
+                     </div>
+                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <h1><a href="{{ path('logout')}}">Выйти</a></h1>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="bottom-header" data-spy="affix" data-offset-top="74">
+               <div class="container">
+                  <ul class="nav nav-pills">
+                     {% for key, item in items %}
+                        {% if page == key %}
+                        <li class="active"><a href="javascript:void(0);">{{item}}</a></li>
+                        {% else %}
+                        <li><a href="{{ path('admin'~key) }}">{{item}}</a></li>
+                        {% endif %}
+                     {% endfor %}
+                  </ul>
+               </div>
+            </div>
+      </div>
+      
+      <div id="content">
+      {% block body%}{% endblock %}
+      </div>
+      
+      <div id="footer">
+         <div class="container">
+            <ul class="nav nav-pills">
+               {% for key, item in items %}
+                  {% if page == key %}
+                  <li class="active"><a href="javascript:void(0);">{{item}}</a></li>
+                  {% else %}
+                  <li><a href="{{ path('admin'~key) }}">{{item}}</a></li>
+                  {% endif %}
+               {% endfor %}
+            </ul>
+            <p>Copyright &copy; 2014</p>
+         </div>
+      </div>
+  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    {% if page == 'index' %}
+      {% javascripts 
+      '@PlastikaFrontendBundle/Resources/public/js/jquery.easings.min.js'
+      '@PlastikaFrontendBundle/Resources/public/js/jquery.slimscroll.min.js'
+      '@PlastikaFrontendBundle/Resources/public/js/jquery.fullPage.min.js' %}
+      <script type="text/javascript" src="{{ asset_url }}"></script>
+      {% endjavascripts %}
+    {% endif %}
+    {% javascripts 
+    '@PlastikaFrontendBundle/Resources/public/js/bootstrap.min.js'
+    '@PlastikaFrontendBundle/Resources/public/js/ekko-lightbox.js'
+    '@PlastikaFrontendBundle/Resources/public/js/master.js' %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+    {{ tinymce_init() }}
+  </body>
+</html>

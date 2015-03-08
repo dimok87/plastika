@@ -1,0 +1,17 @@
+{% extends 'PlastikaFrontendBundle:Layout:admin.html.twig' %}
+
+{% block title %}Цены{% endblock %}
+
+{% block body %}
+<div class="container">
+   <h2>Цены</h2>
+   <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+         <a class="price-link" href="#">Скачать прайс-лист</a>
+         {% image '@PlastikaFrontendBundle/Resources/public/images/price.png' %}
+         <img src="{{ asset_url }}" />
+         {% endimage %}
+      </div>
+  </div>
+</div>
+{% endblock %}

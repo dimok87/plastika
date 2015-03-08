@@ -1,0 +1,38 @@
+{% extends 'PlastikaFrontendBundle:Layout:admin.html.twig' %}
+
+{% block title %}Создание новости{% endblock %}
+
+{% block body %}
+   <div class="container">
+      <h2>Создание новости</h2>
+   </div>
+   <div class="container">
+         <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+               <form class="form-horizontal col-md-8" method="post" {{ form_enctype(form) }}>
+                  {{ form_row(form.title, {
+                      label: 'Заголовок'
+                  }) }}
+                  {{ form_row(form.fullText, {
+                      label: 'Описание'
+                  }) }}
+                  
+                  <div class="images" data-prototype="{{ form_widget(form.images.vars.prototype)|e }}">
+                     {% for image in form.images %}
+                       {{ form_row(image.image) }}
+                     {% endfor %}
+                  </div>
+                  
+                  <div class="video" data-prototype="{{ form_widget(form.video.vars.prototype)|e }}">
+                     {% for movie in form.video %}
+                       {{ form_row(movie.url) }}
+                     {% endfor %}
+                  </div>
+
+                  <button class="btn btn-success" type="submit">Сохранить</button>
+                  <a href="{{path('adminnews')}}" class="btn btn-danger">Назад</a>
+              </form>
+            </div>
+         </div>
+      </div>
+{% endblock %}

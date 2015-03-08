@@ -1,0 +1,96 @@
+{% extends 'PlastikaFrontendBundle:Layout:base.html.twig' %}
+
+{% block title %}Галерея{% endblock %}
+
+{% block body %}
+<div class="container">
+   <h2>Галерея</h2>
+</div>
+<div class="gallery">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-12 col-md-12 col-sm-12">
+            <ul class="offices" role="tablist">
+               <li>
+                  <a href="{{path('media')}}">
+                     <span class="region">Фотографии</span>
+                     <div class="address">Альбомы (22)</div>
+                  </a>
+               </li>
+               <li class="active">
+                  <a href="#video" role="tab" data-toggle="tab">
+                     <span class="region">Видео</span>
+                     <div class="address">Видеозаписи (170)</div>
+                  </a>
+               </li>
+            </ul>
+            <div class="clearfix"></div>
+            <div class="tab-content">
+               <div class="tab-pane fade" id="photo">
+                  
+               </div>
+               <div class="tab-pane fade in active" id="video">
+                  <div class="crumbs">
+                     <span class="first-crumb"><a href="{{ path('album') }}">Все альбомы</a></span>
+                     <span class="crumb-split">-</span>
+                     <span class="last-crumb">Отчетный концерт 2014</span>
+                  </div>
+                  <h4>Отчетный концерт 2014</h4>
+                  <div class="row">
+                     <div class="col-lg-3 col-md-3 col-sm-3">
+                        <a style="width: 230px;" class="play-video-container" href="http://placehold.it/1150x600" data-gallery="vgallery" data-title="Развитие гибкости" data-type="image" data-toggle="lightbox">
+                           <div>
+                              <img src="http://placehold.it/230x120" />
+                              <div class="album-header">
+                                 <div class="title pull-left">Pole dance</div>
+                                 <div class="clearfix"></div>
+                              </div>
+                              <div class="play-video"></div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="col-lg-3 col-md-3 col-sm-3">
+                        <a style="width: 230px;" class="play-video-container" href="http://placehold.it/1150x600" data-gallery="vgallery" data-title="Развитие гибкости" data-type="image" data-toggle="lightbox">
+                           <div>
+                              <img src="http://placehold.it/230x120" />
+                              <div class="album-header">
+                                 <div class="title pull-left">Pole dance</div>
+                                 <div class="clearfix"></div>
+                              </div>
+                              <div class="play-video"></div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="col-lg-3 col-md-3 col-sm-3">
+                        <a style="width: 230px;" class="play-video-container" href="http://placehold.it/1150x600" data-gallery="vgallery" data-title="Развитие гибкости" data-type="image" data-toggle="lightbox">
+                           <div>
+                              <img src="http://placehold.it/230x120" />
+                              <div class="album-header">
+                                 <div class="title pull-left">Pole dance</div>
+                                 <div class="clearfix"></div>
+                              </div>
+                              <div class="play-video"></div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="col-lg-3 col-md-3 col-sm-3">
+                        <a style="width: 230px;" class="play-video-container" href="http://placehold.it/1150x600" data-gallery="vgallery" data-title="Развитие гибкости" data-type="image" data-toggle="lightbox">
+                           <div>
+                              <img src="http://placehold.it/230x120" />
+                              <div class="album-header">
+                                 <div class="title pull-left">Pole dance</div>
+                                 <div class="clearfix"></div>
+                              </div>
+                              <div class="play-video"></div>
+                           </div>
+                        </a>
+                     </div>
+                     
+                  </div>
+               </div>
+            </div> 
+         </div>
+     </div>
+  </div>
+</div>
+{% endblock %}

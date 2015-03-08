@@ -1,0 +1,44 @@
+{% extends 'PlastikaFrontendBundle:Layout:base.html.twig' %}
+
+{% block title %}Контакты{% endblock %}
+
+{% block body %}
+<div class="container">
+   <h2>Контакты</h2>
+</div>
+<div class="contacts">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-12 col-md-12 col-sm-12">
+            <ul class="offices" role="tablist">
+               <li class="active">
+                  <a href="#center" role="tab" data-toggle="tab">
+                     <span class="region">Центр</span>
+                     <div class="address">ул. Карла Маркса, 68</div>
+                     <div class="phone">+7 (4732) 233-07-63</div>
+                     <div class="email">plastika.vrn@yandex.ru</div>
+                  </a>
+               </li>
+               <li>
+                  <a href="#nord" role="tab" data-toggle="tab">
+                     <span class="region">Северный</span>
+                     <div class="address">ул. Владимира Невского, 31б</div>
+                     <div class="phone">+7 (920) 443-23-90</div>
+                     <div class="email">plastika.vrn@yandex.ru</div>
+                  </a>
+               </li>
+            </ul>
+            <div class="clearfix"></div>
+            <div class="tab-content">
+               <div class="tab-pane fade in active" id="center">
+                  <script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=U_TOvXMj5Hs8MIcBp_Q9je0tXxfDtWMZ&width=100%&height=675"></script>
+               </div>
+               <div class="tab-pane fade" id="nord">
+                  <script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=MqNyP4AAumugCz2R8yfnarUM8Yg6606r&width=100%&height=675"></script>
+               </div>
+            </div> 
+         </div>
+     </div>
+   </div>
+</div>
+{% endblock %}

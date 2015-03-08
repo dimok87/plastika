@@ -1,0 +1,1264 @@
+@font-face {
+    font-family: 'museo_sans_cyrl500';
+    src: url('../../bundles/plastikafrontend/fonts/exljbris_-_museosanscyrl-500-webfont.eot');
+    src: url('../../bundles/plastikafrontend/fonts/exljbris_-_museosanscyrl-500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../bundles/plastikafrontend/fonts/exljbris_-_museosanscyrl-500-webfont.ttf') format('truetype'),
+         url('../../bundles/plastikafrontend/fonts/exljbris_-_museosanscyrl-500-webfont.svg#museo_sans_cyrl500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'museo_sans_cyrl300';
+    src: url('../../bundles/plastikafrontend/fonts/exljbris_-_museosanscyrl-300-webfont.eot');
+    src: url('../../bundles/plastikafrontend/fonts/exljbris_-_museosanscyrl-300-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../bundles/plastikafrontend/fonts/exljbris_-_museosanscyrl-300-webfont.ttf') format('truetype'),
+         url('../../bundles/plastikafrontend/fonts/exljbris_-_museosanscyrl-300-webfont.svg#museo_sans_cyrl300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'museo_sans_cyrl100';
+    src: url('../../bundles/plastikafrontend/fonts/exljbris_-_museosanscyrl-100-webfont.eot');
+    src: url('../../bundles/plastikafrontend/fonts/exljbris_-_museosanscyrl-100-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../bundles/plastikafrontend/fonts/exljbris_-_museosanscyrl-100-webfont.ttf') format('truetype'),
+         url('../../bundles/plastikafrontend/fonts/exljbris_-_museosanscyrl-100-webfont.svg#museo_sans_cyrl100') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'museo_sans_cyrl900';
+    src: url('../../bundles/plastikafrontend/fonts/exljbris_-_museosanscyrl-900-webfont.eot');
+    src: url('../../bundles/plastikafrontend/fonts/exljbris_-_museosanscyrl-900-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../bundles/plastikafrontend/fonts/exljbris_-_museosanscyrl-900-webfont.ttf') format('truetype'),
+         url('../../bundles/plastikafrontend/fonts/exljbris_-_museosanscyrl-900-webfont.svg#museo_sans_cyrl900') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'museo_sans_cyrl700';
+    src: url('../../bundles/plastikafrontend/fonts/exljbris_-_museosanscyrl-700-webfont.eot');
+    src: url('../../bundles/plastikafrontend/fonts/exljbris_-_museosanscyrl-700-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../bundles/plastikafrontend/fonts/exljbris_-_museosanscyrl-700-webfont.ttf') format('truetype'),
+         url('../../bundles/plastikafrontend/fonts/exljbris_-_museosanscyrl-700-webfont.svg#museo_sans_cyrl700') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 87px;
+  font-family: 'museo_sans_cyrl300';
+  font-size: 12px;
+}
+
+h2 {
+   font-size: 48px;
+   border-bottom: 10px solid #cc0066;
+   display: inline-block;
+   text-transform: uppercase;
+   height: 65px;
+   letter-spacing: 5px;
+   font-family: 'museo_sans_cyrl900';
+}
+
+.container
+{
+    min-width: 970px !important;
+}
+
+#content {
+   padding-bottom: 40px;
+}
+
+#header, #bottom-header {
+   background-color: #232625;
+}
+
+#header {
+   margin-bottom: 40px;
+}
+
+.index #header {
+   position: absolute;
+   width: 100%;
+   z-index: 100;
+  background: none;
+}
+
+.index #bottom-header {
+  background: none;
+  border-bottom: 1px solid #333;
+}
+
+.index #bottom-header, .index #footer {
+  font-size: 12px;
+}
+
+#bottom-header {
+   width: 100%;
+   top: 0;
+   z-index: 1;
+}
+
+#top-header .info {
+   margin-top: 17px;
+}
+
+#top-header .vk {
+   line-height: 74px;
+}
+
+#bottom-header {
+   border-top: 1px solid #333;
+}
+
+.nav li {
+   text-transform: uppercase;
+   line-height: 40px;
+   height: 60px;
+}
+
+.nav li a {
+   color: #fff;
+   padding: 10px 0px;
+   font-family: 'museo_sans_cyrl500';
+   outline: 0;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background: none;
+  outline: 0;
+}
+
+.nav-pills > li + li {
+  margin-left: 48px;
+}
+
+@media (min-width: 1200px) {
+   #bottom-header .nav-pills > li + li,#footer .nav-pills > li + li {
+     margin-left: 77px;
+   }
+}
+
+.nav li.active a, .nav li.active a:hover, .nav li a:hover {
+   color: #cc0066;
+   background: none;
+   -webkit-border-radius: 0;
+   -moz-border-radius: 0;
+   border-radius: 0;
+}
+
+#header .nav li.active a, #header .nav li.active a:hover, #header .nav li a:hover {
+   border-bottom: 5px solid #cd0467;
+}
+
+#top-header .contacts-link:hover {
+   text-decoration: none;
+}
+
+#top-header .info .phone {
+   font-size: 15px;
+   color: #fff;
+   font-family: 'museo_sans_cyrl500';
+}
+
+#top-header .info .contacts-link:hover .phone {
+   color: #cc0066;
+}
+
+#top-header .info .address, #top-header .vk {
+   font-size: 13px;
+   color: #666;
+}
+
+#top-header .vk {
+   background: url('../../bundles/plastikafrontend/images/vk.png') no-repeat 130px center;
+   padding-right: 50px;
+   text-decoration: none;
+   outline: 0;
+}
+
+#footer {
+   background-color: #000;
+   color: #fff;
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 87px;
+}
+
+#footer p {
+   font-family: 'museo_sans_cyrl500';
+}
+
+.news, .show, .achievement {
+   padding-bottom: 50px;
+   border-bottom: 1px solid #eaeaea;
+}
+
+.last-news, .last-show, .last-achievement {
+   border-bottom: none;
+}
+
+.news h4, .show h4, .coach h4, #photo h4, #video h4 {
+   font-size: 24px;
+   color: #111;
+   letter-spacing: 2px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.news h4, .show h4, #photo h4, #video h4 {
+   font-family: 'museo_sans_cyrl900';
+}
+
+.coach h4 {
+   font-family: 'museo_sans_cyrl700';
+}
+
+#photo h4, #video h4 {
+   text-transform: uppercase;
+   margin-top: 0px;
+}
+
+.achievement h3 {
+   font-size: 15px;
+   font-family: 'museo_sans_cyrl500';
+   color: #333;
+}
+
+.achievement h4 {
+   font-size: 24px;
+   font-family: 'museo_sans_cyrl900';
+   color: #111;
+   letter-spacing: 1px;
+   margin-left: -15px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   background-color: #ddff00;
+   padding: 10px 15px;
+   text-transform: uppercase;
+   line-height: 35px;
+   display: inline-block;
+}
+
+.news p, .show p, .description, .coach p, .achievement p, .style p {
+   font-size: 15px;
+   color: #666;
+   line-height: 30px;
+}
+
+.achievement p {
+   margin-top: 20px;
+}
+
+.achievement .achievement-media-types {
+   position: relative;
+   top: 142px;
+}
+
+.description {
+   margin-bottom: 30px;
+}
+
+.news a, .coach a, .achievement-media, .show-price a, .achievement-media-types a {
+   text-transform: uppercase;
+   color: #111;
+   font-family: 'museo_sans_cyrl700';
+   text-decoration: none;
+}
+
+.news a:hover, .coach a:hover, .achievement-media:hover, .show-price a:hover, .achievement-media-types a:hover {
+   color: #111;
+}
+
+.achievement-media {
+   margin-top: 15px;
+   margin-bottom: 30px;
+   display: block;
+}
+
+.show-price {
+   text-align: right;
+   margin-top: 20px;
+}
+
+.show-coaches {
+   text-align: right;
+   margin-top: 40px;
+   margin-bottom: 80px;
+}
+
+.show-coaches .show-price-label {
+   margin-bottom: 25px;
+}
+
+.style-timetable {
+   margin-top: 50px;
+   padding-bottom: 50px;
+   border-top: 1px solid #eaeaea;
+   border-bottom: 1px solid #eaeaea;
+}
+
+.toggle-timetable {
+   margin-right: 50px;
+   margin-top: 25px;
+}
+
+.toggle-timetable:hover, .toggle-timetable:active, .toggle-timetable:focus {
+   text-decoration: none;
+   color: #333;
+   outline: 0;
+}
+
+.directions-list {
+   margin: 30px 0;
+   width: 91%;
+   white-space: nowrap;
+   overflow: hidden;
+   position: relative;
+   font-family: 'museo_sans_cyrl700';
+}
+
+.directions-list:after {
+   content: "";
+   position: absolute;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   width: 30px;
+   background: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,1) 80%);
+   background: -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,1) 80%);
+   background: -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,1) 80%);
+   background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1) 80%)
+}
+
+.directions-list ul {
+   list-style-type: none;
+   padding: 0;
+   width: 1200px;
+   position: relative;
+}
+
+.directions-left, .directions-right {
+   margin-top: 26px;
+   color: #111;
+   font-weight: bold;
+   font-size: 15px;
+   font-family: 'museo_sans_cyrl700';
+}
+
+.directions-left {
+   margin-right: 15px;
+}
+
+.directions-right {
+   margin-left: 50px;
+}
+
+.directions-list ul li a {
+   color: #111;
+   font-size: 12px;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+
+.directions-list ul li a:hover, .directions-list ul li a:active, .directions-list ul li a:focus, .directions-left:hover, .directions-right:hover, .directions-left:active, .directions-right:active, .directions-left:focus, .directions-right:focus {
+   color: #cc0066;
+   outline: 0;
+   text-decoration: none;
+}
+
+.style-timetable .offices {
+   margin-top: 0px;
+}
+
+.style-timetable table tr td:first-child {
+   background-color: #efefef;
+}
+
+.show-price-label, .show-price-currency, .show-price-from {
+   text-transform: uppercase;
+   font-size: 24px;
+}
+
+.show-price-label {
+   color: #111;
+   letter-spacing: 2px;
+   font-family: 'museo_sans_cyrl700';
+}
+
+.show-price-sum {
+   font-size: 48px;
+   font-family: 'museo_sans_cyrl900';
+   color: #111;
+}
+
+.show-price-currency {
+    color: #333;
+}
+
+.show-price-from {
+   color: #999;
+   font-family: 'museo_sans_cyrl300';
+}
+
+.coaches {
+   margin-top: 30px;
+}
+
+.coaches h3 {
+   font-size: 12px;
+   text-transform: uppercase;
+   font-family: 'museo_sans_cyrl700';
+   margin-top: 0px;
+   color: #333;
+}
+
+.show-coaches h3 {
+   margin-top: 20px;
+}
+
+.show-coaches a {
+   margin-top: 5px;
+   margin-bottom: 5px;
+   display: block;
+}
+
+.coaches ul {
+   list-style-type: none;
+   font-size: 13px;
+   color: #666;
+   margin: 0;
+   padding: 0;
+}
+
+.coaches img {
+   border: 5px solid #ddff00;
+}
+
+.coaches a:hover img {
+   border: 5px solid #cc0066;
+}
+
+.coaches a:hover h3 {
+   color: #cc0066;
+}
+
+.coach-title {
+   text-align: center;
+   width: 230px;
+   font-family: 'museo_sans_cyrl700';
+}
+
+.coach a {
+   display: inline-block;
+}
+
+.directions {
+   padding: 0 0 30px;
+   margin-bottom: 30px;
+   border-bottom: 1px solid #eaeaea;
+   list-style-type: none;
+}
+
+.directions li {
+   text-transform: uppercase;
+   color: #cc0066;
+   font-size: 12px;
+   height: 20px;
+}
+
+.directions .delim {
+   width: 20px;
+   height: 5px;
+   background: #222423;
+   margin: auto;
+   margin-top: 15px;
+}
+
+.timetable-container {
+   position: relative;
+}
+
+.timetable {
+   font-family: 'museo_sans_cyrl500';
+}
+
+.timetable th, .timetable td {
+   font-size: 12px;
+   text-align: center;
+   vertical-align: middle !important;
+   padding-top: 35px !important;
+   padding-bottom: 35px !important;
+}
+
+.timetable th {
+   text-transform: uppercase;
+   font-weight: normal;
+   background: #efefef;
+}
+
+.timetable, .timetable td, .timetable th {
+   border-color: #efefef !important;
+}
+
+.timetable .odd {
+   background: #fafafa;
+}
+
+.timetable h5, .timetable h6 {
+   font-size: 10px;
+   margin: 0px;
+}
+
+.timetable h5 {
+   font-family: 'museo_sans_cyrl700';
+   text-transform: uppercase;
+}
+
+.offices .region {
+   text-transform: uppercase;
+   border-bottom: dotted;
+   font-size: 12px;
+   color: #cc0066;
+   font-family: 'museo_sans_cyrl700';
+}
+
+.offices {
+   padding: 0;
+   list-style-type: none;
+   margin-top: 20px;
+   margin-bottom: 0px;
+}
+
+.offices:after {
+   clear: both;
+}
+
+.offices .address {
+   color: #666;
+   margin-top: 5px;
+}
+
+.offices li {
+   padding: 20px 25px;
+   float: left;
+}
+
+.offices li.active {
+   background: #ddff00;
+}
+
+.offices li.active .region {
+   color: #333;
+}
+
+.offices li a {
+   text-decoration: none;
+   outline: 0;
+}
+
+.download, .download:hover {
+   color: #cc0066;
+   text-decoration: none;
+   top: -35px;
+   position: absolute;
+   right: 0;
+}
+
+.price-link, .price-link:hover {
+   color: #cc0066;
+   text-decoration: none;
+   top: -22px;
+   left: 862px;
+   position: absolute;
+}
+
+.contacts, .gallery {
+   border-top: 1px solid #eaeaea;
+   margin-top: 25px;
+}
+
+.contacts ul, .gallery ul {
+   margin-top: 0px;
+}
+
+.contacts ul li {
+   width: 50%;
+}
+
+.contacts ul li .address {
+   text-transform: uppercase;
+   font-size: 13px;
+   font-family: 'museo_sans_cyrl700';
+}
+
+.contacts ul li .phone {
+   color: #666;
+   font-size: 18px;
+   font-family: 'museo_sans_cyrl700';
+}
+
+.contacts ul li .email {
+   color: #666;
+   font-size: 13px;
+}
+
+.contacts ul li.active .address, .contacts ul li.active .phone, .contacts ul li.active .email {
+   color: #252824;
+}
+
+.price-container a {
+   display: block;
+   margin-top: 40px;
+}
+
+.album-header {
+   line-height: 30px;
+   height: 30px;
+   padding-left: 10px;
+   padding-right: 10px;
+   background: #ddff00;
+   font-family: 'museo_sans_cyrl700';
+   font-size: 13px;
+   width: 230px;
+}
+
+.album-header .title {
+   color: #333;
+   text-transform: none;
+}
+
+.album-header .count {
+   color: #cc0066;
+   font-weight: 500;
+}
+
+.news-media {
+   position: relative;
+   top: 8px;
+}
+
+.news-media a {
+   margin-bottom: 30px;
+   display: block;
+}
+
+.crumbs {
+   margin-top: 25px;
+   font-family: 'museo_sans_cyrl700';
+}
+
+.first-crumb a, .first-crumb a:hover {
+   color: #cc0066;
+   text-decoration: none;
+}
+
+.last-crumb, .crumb-split {
+   color: #666;
+}
+
+/*
+.carousel .item {
+    width: 100%;
+}
+.carousel .item img {
+    width: 100%;
+}
+
+.carousel-caption {
+   text-align: left;
+   left: auto;
+   right: auto;
+   top: 170px;
+}
+
+.carousel-caption h1 {
+   color: #eefe45;
+   font-size: 32px;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+}
+
+.carousel-caption p {
+   font-size: 19px;
+   text-transform: uppercase;
+   width: 220px;
+   letter-spacing: 2px;
+}
+
+.carousel .item .carousel-caption img {
+   width: auto;
+}
+
+.carousel-indicators {
+   bottom: 10%;
+   width: auto;
+   margin-left: 0;
+   left: auto;
+}
+
+.carousel-indicators .active {
+   background: #cd0467;
+}
+.carousel-indicators li {
+   border-color: gray;
+}
+
+@media (max-width: 767px) {
+    .block {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+
+
+.vertical .carousel-inner {
+  height: 100%;
+}
+
+.carousel.vertical .item {
+  -webkit-transition: 0.6s ease-in-out top;
+     -moz-transition: 0.6s ease-in-out top;
+      -ms-transition: 0.6s ease-in-out top;
+       -o-transition: 0.6s ease-in-out top;
+          transition: 0.6s ease-in-out top;
+}
+
+.carousel.vertical .active {
+  top: 0;
+}
+
+.carousel.vertical .next {
+  top: 100%;
+}
+
+.carousel.vertical .prev {
+  top: -100%;
+}
+
+.carousel.vertical .next.left,
+.carousel.vertical .prev.right {
+  top: 0;
+}
+
+.carousel.vertical .active.left {
+  top: -100%;
+}
+
+.carousel.vertical .active.right {
+  top: 100%;
+}
+
+.carousel.vertical .item {
+    left: 0;
+}*/
+
+#fullpage img {
+    width: 100%;
+}
+
+.fp-controlArrow {
+   display: none;
+}
+
+.fp-slidesNav {
+   left: auto;
+   margin-left: 0 !important;
+}
+
+.fp-slidesNav .active, #fp-nav .active {
+    outline: 0;
+}
+
+.fp-slidesNav .active span {
+    background: #cd0467;
+}
+
+.fp-slidesNav span {
+    border-color: gray;
+    width: 10px;
+    height: 10px;
+}
+
+#fp-nav {
+   background: #cd0367;
+   padding: 10px 2px 5px;
+}
+
+#fp-nav span {
+    border-color: #fff;
+    width: 10px;
+    height: 10px;
+}
+
+#fp-nav a:hover span {
+    background: #323431 !important;
+    border-color: #323431;
+}
+
+#fp-nav a.active span {
+    background: #edfd42 !important;
+    border-color: #fff;
+}
+
+.fp-slidesNav li {
+   margin: 2px;
+}
+
+.slide .caption {
+   position: absolute;
+   top: 170px;
+}
+
+.slide h1, .slide h3 {
+   color: #eeff44;
+   font-size: 48px;
+   text-transform: uppercase;
+   letter-spacing: 7px;
+   font-family: 'museo_sans_cyrl900';
+   margin-bottom: 3px;
+   margin-left: 3px;
+}
+
+.slide h3 {
+   color: #fff;
+   margin-top: 5px;
+}
+
+.slide .caption p {
+   font-size: 30px;
+   text-transform: uppercase;
+   width: 450px;
+   letter-spacing: 4px;
+   color: #fff;
+   font-family: 'museo_sans_cyrl900';
+}
+
+.slide .caption img {
+   width: auto !important;
+}
+
+#fp-nav li:first-child span, #fp-nav li:first-child a:hover span {
+    background: url('../../bundles/plastikafrontend/images/home-icon.png') no-repeat !important;
+    display: block;
+    width: 16px;
+    height: 18px;
+    border: 0;
+    margin-top: -7px;
+    margin-left: -4px;
+}
+
+.fp-tooltip {
+   background: #333;
+   color: #f2fe44;
+   padding: 10px;
+   text-transform: uppercase;
+   right: 40px !important;
+   top: -15px;
+   letter-spacing: 2px;
+   font-family: 'museo_sans_cyrl900';
+   max-width: 600px;
+}
+
+.fp-tooltip:after {
+   content:'';
+   width: 0; 
+   height: 0; 
+   border-top: 5px solid transparent;
+   border-bottom: 5px solid transparent;
+   border-left: 5px solid #333;
+   position: absolute;
+   top: 50%;
+   margin-top: -5px;
+   right: -5px;
+}
+
+.fp-tooltip.active {
+   background: #eefe45;
+   color: #333;
+}
+
+.fp-tooltip.active:after {
+   content:'';
+   width: 0; 
+   height: 0; 
+   border-top: 5px solid transparent;
+   border-bottom: 5px solid transparent;
+   border-left: 5px solid #eefe45;
+   position: absolute;
+   top: 50%;
+   margin-top: -5px;
+   right: -5px;
+}
+
+/*.direction-caption {
+   position: absolute;
+   top: 0;
+   text-align: center;
+}
+
+.direction-caption.on-left {
+   left: auto;
+   text-align: left;
+}
+
+.direction-caption.on-left p {
+   width: 40%;
+}*/
+
+.direction-caption h2 {
+   height: 74px;
+   margin-bottom: 25px;
+}
+
+.direction-caption.on-non-white h2, .direction-caption.on-non-white p, .direction-caption.on-non-white a {
+   color: #fff;
+}
+
+.direction-caption a {
+   text-transform: uppercase;
+   color: #111;
+   font-family: 'museo_sans_cyrl900';
+   font-size: 16px;
+   text-decoration: none;
+   letter-spacing: 2px;
+}
+
+a.create-link {
+   margin-top: 20px;
+   display: block;
+   text-decoration: underline;
+}
+/*
+.section {
+   background-size: cover;
+}
+
+#slide1 {
+   background-image: url(../../bundles/plastikafrontend/images/index01.png);
+}
+
+#slide2 {
+   background-image: url(../../bundles/plastikafrontend/images/index02.png);
+   
+}
+#slide3 {
+   background-image: url(../../bundles/plastikafrontend/images/index03.png);
+}
+#slide4 {
+   background-image: url(../../bundles/plastikafrontend/images/index04.png);
+}*/
+
+.section {
+   overflow-y: hidden;
+}
+
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#fullpage .row.no-gutter img {
+   width: 101%;
+}
+
+#fullpage .row.no-gutter div {
+   overflow: hidden;
+}
+
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.directions-description-container {
+   position: absolute;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+
+.direction-caption {
+   min-width: 400px;
+}
+
+.direction-caption.vcenter {
+   top: 50%;
+}
+
+.two-rowed {
+   height: 150px;
+   line-height: 60px;
+}
+
+.three-rowed {
+   height: 190px;
+}
+
+.on-right {
+   position: absolute;
+   top: 25px;
+   left: 50%;
+   margin-left: 65px;
+}
+
+.on-bottom-right {
+   position: absolute;
+   bottom: 0%;
+   margin-bottom: 55px;
+   left: 50%;
+   margin-left: 65px;
+}
+
+.on-center-right {
+   position: absolute;
+   top: 50%;
+   margin-top: -210px;
+   left: 50%;
+   margin-left: 65px;
+}
+
+.on-left {
+   margin-top: 25px;
+}
+
+.bottom-center {
+   position: absolute;
+   bottom: 0%;
+   margin-bottom: 55px;
+}
+
+.on-center {
+   width: 835px;
+   margin: 40px auto 0;
+   text-align: center;
+}
+
+.on-half {
+   position: absolute;
+   top: 50%;
+   margin-top: -210px;
+}
+
+.play-video-container {
+   display: block;
+   position: relative;
+}
+
+.play-video {
+   width: 65px;
+   height: 64px;
+   background: url('../../bundles/plastikafrontend/images/play.png') no-repeat;
+   position: absolute;
+   left: 50%;
+   margin-left: -32px;
+   top: 50%;
+   margin-top: -47px;
+}
+
+.modal-backdrop.in {
+  filter: alpha(opacity=80);
+  opacity: .8;
+}
+
+.ekko-lightbox .modal-header {
+  border-bottom: none;
+}
+
+.ekko-lightbox .modal-content {
+  background: none;
+  border: none;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.ekko-lightbox .modal-header {
+   padding-top: 0px;
+   padding-bottom: 0px;
+}
+
+.ekko-lightbox .modal-header h4 {
+   color: #fff;
+   font-size: 12px;
+   font-family: 'museo_sans_cyrl700';
+}
+
+.ekko-lightbox .modal-header .close, .ekko-lightbox .modal-header .close:hover, .ekko-lightbox .modal-header .close:focus {
+   color: #cc0066;
+   font-size: 12px;
+   font-weight: normal;
+   filter: alpha(opacity=1);
+   opacity: 1;
+   text-shadow: none;
+   margin-top: 0;
+   line-height: none;
+   font-family: 'museo_sans_cyrl700';
+}
+
+.ekko-lightbox .play-next {
+   padding: 0 !important;
+   position: absolute;
+   top: 50%;
+   right: 0;
+   width: 0 !important; 
+   height: 0 !important;
+   border-top: 15px solid transparent;
+   border-bottom:15px solid transparent;
+   border-left: 15px solid #cc0066;
+   filter: alpha(opacity=1) !important;
+   opacity: 1 !important;
+   margin-top: -15px;
+   margin-right: -65px;
+}
+
+.ekko-lightbox .play-prev {
+   padding: 0 !important;
+   position: absolute;
+   top: 50% !important;
+   left: 0;
+   width: 0 !important; 
+   height: 0 !important; 
+   border-top: 15px solid transparent;
+   border-bottom: 15px solid transparent; 
+   border-right:15px solid #cc0066; 
+   filter: alpha(opacity=1) !important;
+   opacity: 1 !important;
+   margin-top: -15px;
+   margin-left: -65px;
+}
+
+#section1,
+#style-poledance,
+#style-hiphop,
+#style-stanok,
+#style-rastyazhka,
+#style-stripplastika,
+#style-yoga,
+#style-jazz,
+#style-shaping,
+#style-latina,
+#style-vostok,
+#style-acrobatic,
+#style-deti,
+#style-wedding {
+    background-size: cover;
+}
+
+ #slide1 {
+    background: url(../../bundles/plastikafrontend/images/index01.png) no-repeat 100% 0 #000001;
+ }
+
+ #slide2 {
+    background: url(../../bundles/plastikafrontend/images/index02.png) no-repeat 100% 0 #00193d;
+ }
+ #slide3 {
+    background: url(../../bundles/plastikafrontend/images/index03.png) no-repeat 100% 0 #0e0100;
+ }
+ #slide4 {
+    background: url(../../bundles/plastikafrontend/images/index04.png) no-repeat 100% 0 #1a1e1d;
+ }
+
+ #style-poledance {
+    background: url(../../bundles/plastikafrontend/images/poledance.jpg) no-repeat;
+ }
+
+ #style-hiphop {
+    background: url(../../bundles/plastikafrontend/images/hiphop.jpg) no-repeat 100% 0;
+    height: 100%;
+ }
+
+ #style-stanok {
+    background: url(../../bundles/plastikafrontend/images/stanok.jpg) no-repeat;
+    height: 100%;
+ }
+
+ #style-rastyazhka {
+    background: url(../../bundles/plastikafrontend/images/rastyazhka.jpg) no-repeat center 0;
+ }
+ 
+ #style-stripplastika {
+    background: url(../../bundles/plastikafrontend/images/stripplastika.jpg) no-repeat center 0;
+ }
+ 
+ #style-yoga {
+    background: url(../../bundles/plastikafrontend/images/yoga.jpg) no-repeat 100% 0;
+    height: 100%;
+ }
+ 
+ #style-jazz {
+    background: url(../../bundles/plastikafrontend/images/jazz.jpg) no-repeat;
+    height: 100%;
+ }
+ 
+ #style-shaping {
+    background: url(../../bundles/plastikafrontend/images/shaping.jpg) no-repeat;
+    height: 100%;
+ }
+ 
+ #style-latina {
+    background: url(../../bundles/plastikafrontend/images/latina.jpg) no-repeat  100% 0;
+    height: 100%;
+ }
+ 
+ #style-vostok {
+    background: url(../../bundles/plastikafrontend/images/vostok.jpg) no-repeat;
+    height: 100%;
+ }
+ 
+ #style-acrobatic {
+    background: url(../../bundles/plastikafrontend/images/acrobatic.jpg) no-repeat 100% 0;
+    height: 100%;
+ }
+ 
+ #style-deti {
+    background: url(../../bundles/plastikafrontend/images/deti.jpg) no-repeat;
+    height: 100%;
+ }
+ 
+ #style-wedding {
+    background: url(../../bundles/plastikafrontend/images/wedding.jpg) no-repeat center 0;
+ }
+ 
+ .logo-index {
+    background: url(../../bundles/plastikafrontend/images/logo-index.png) no-repeat;
+    width: 275px;
+    height: 133px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+ }
+ 
+ #fp-nav.right {
+    left: 90%;
+    right: auto !important;
+ }

@@ -1,0 +1,10 @@
+plastika_business:
+    resource: "@PlastikaBusinessBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+plastika_frontend:
+    resource: "@PlastikaFrontendBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

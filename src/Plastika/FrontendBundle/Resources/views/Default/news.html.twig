@@ -1,0 +1,49 @@
+{% extends 'PlastikaFrontendBundle:Layout:base.html.twig' %}
+
+{% block title %}Новости{% endblock %}
+
+{% block body %}
+   <div class="container">
+      <h2>Новости</h2>
+   </div>
+   <div class="news">
+      <div class="container">
+         <h4>Упражнения для гибкости спины</h4>
+         <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+               <p>
+                  Комплекс упражнений, направленный на вытяжение и развитие гибкости позвоночника, на улучшение осанки, развитие подвижности суставов, укрепление мышц спины, бедер и ягодиц, улучшение работы внутренних органов брюшной полости и грудной клетки, уменьшение жировых отложений в области живота, талии и бедер.Рекомендуем выполнять комплекс в первой половине дня, так как упражнения активизируют симпатическую нервную систему
+               </p>
+               <a href="#">Подробнее &gt;</a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+               <div class="news-media pull-right">
+                  <a class="play-video-container" href="http://placehold.it/1150x600" data-gallery="news" data-title="Развитие гибкости" data-type="image" data-toggle="lightbox">
+                     <img src="http://placehold.it/230x120" class="img-responsive" />
+                     <div class="album-header">
+                        <div class="title">Развитие гибкости</div>
+                     </div>
+                     <div class="play-video"></div>
+                  </a>
+
+                  <a href="http://placehold.it/1151x601" data-gallery="news" data-type="image" data-title="Развитие гибкости 2" data-toggle="lightbox">
+                  <img src="http://placehold.it/230x120" class="img-responsive" />
+                  </a>
+               </div>   
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="news last-news">
+      <div class="container">
+         <h4>Шпагат за 30 дней</h4>
+         <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+               <iframe width="420" height="315" src="http://www.youtube.com/embed/GapR198Ut_k?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+         </div>
+      </div>
+   </div>
+{% endblock %}

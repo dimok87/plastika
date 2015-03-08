@@ -1,0 +1,7 @@
+parameters:
+#    plastika_frontend.example.class: Plastika\FrontendBundle\Example
+
+services:
+#    plastika_frontend.example:
+#        class: %plastika_frontend.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

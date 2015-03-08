@@ -1,0 +1,19 @@
+parameters:
+    database_driver:   pdo_mysql
+    database_host:     localhost
+    database_port:     ~
+    database_name:     ploginov
+    database_user:     ploginov
+    database_password: dBbovV]D;zic
+
+    mailer_transport:  smtp
+    mailer_host:       127.0.0.1
+    mailer_user:       ~
+    mailer_password:   ~
+
+    locale:            en
+    secret:            ThisTokenIsNotSoSecretChangeIt
+
+    debug_toolbar:          false
+    debug_redirects:        false
+    use_assetic_controller: true

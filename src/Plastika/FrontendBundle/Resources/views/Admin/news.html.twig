@@ -1,0 +1,22 @@
+{% extends 'PlastikaFrontendBundle:Layout:admin.html.twig' %}
+
+{% block title %}Новости{% endblock %}
+
+{% block body %}
+   <div class="container">
+      <h2>Новости</h2>
+      <br /><br />
+      <a class="btn btn-primary" href="{{path('newscreate')}}">Добавить новость</a>
+      <br /><br /><br />
+      <div class="list-group">
+      {% for item in news %}
+      <a href="{{path('newsedit', {'id' : item.id})}}" class="list-group-item">
+         <span class="badge" onclick="javascript:if (!confirm('Вы уверены?')) { return false; } else { location.href='{{path('newsdelete', {'id' : item.id})}}'; return false; }">x</span>
+         {{item.title}}
+      </a>
+      {% endfor %}
+      </div>
+      
+   </div>
+   
+{% endblock %}
